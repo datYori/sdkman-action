@@ -27,9 +27,9 @@ Filename of the downloaded archive.
     candidate: java
     version: 19.0.1-tem
 - uses: actions/setup-java@v1
-    id: setup-java
-    with:
-      java-version: 19.0.1
-      jdkFile: ${{ steps.sdkman.outputs.file }}
+  id: setup-java
+  with:
+    java-version: 19.0.1
+    jdkFile: ${{ steps.sdkman.outputs.file }}
 - run: java --version
 ```
